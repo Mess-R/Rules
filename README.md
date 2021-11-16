@@ -1,1 +1,1 @@
-自用Surge，QuantumultX规则
+自用Surge、QuantumultX规则
