@@ -1,5 +1,5 @@
 #!name=AdvertisingScript
-#!desc=2021-11-17
+#!desc=去广告脚本 2021-11-18
 
 [Rule]
 DOMAIN,118.89.204.198,REJECT
