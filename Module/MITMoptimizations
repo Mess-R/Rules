@@ -1,0 +1,5 @@
+#!name=MITM Optimizations
+#!desc=MITM去重补齐优化
+
+[MITM]
+hostname = %APPEND% api.tv.sohu.com,guide-acs.m.taobao.com,gw.alicdn.com,manga.bilibili.com,p124.music.126.net,static1.keepcdn.com,wap.js.10086.cn,img.sina.com
