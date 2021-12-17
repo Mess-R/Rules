@@ -144,11 +144,11 @@ const BASE_URL = 'https://www.youtube.com/premium'
     }
     
     if (isOK.includes(rootName) == true) {
-      panel['content'] = `节点被送中 YouTube已去广告`
+      panel['content'] = `节点送中已去广告`
       panel['icon'] = params.icon1
       panel['icon-color'] = params.color1
     } else {
-      panel['content'] = `节点异常 你可能无法使用会员权益`
+      panel['content'] = `节点正常支持Premium`
       panel['icon'] = params.icon2
       panel['icon-color'] = params.color2
     }
