@@ -144,7 +144,7 @@ const BASE_URL = 'https://www.youtube.com/premium'
     }
     
     if (isOK.includes(rootName) == true) {
-      panel['content'] = `YouTube节点正常  地区：${regData[rootName]}`
+      panel['content'] = `节点被送中`
       panel['icon'] = params.icon1
       panel['icon-color'] = params.color1
     } else {
