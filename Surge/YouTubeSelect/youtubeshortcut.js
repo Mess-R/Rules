@@ -127,7 +127,7 @@ const BASE_URL = 'https://www.youtube.com/premium'
     let info
     if (newStatus === 1) {
       info = `已选定节点： ${rootName} | ${statusName(newStatus)} | 已去广告`
-    } else if (statusData[rootName] == 2) {
+    } else if (statusData[rootName] == 1) {
       info = `节点支持YouTube Premium`
     }
 
