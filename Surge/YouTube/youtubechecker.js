@@ -185,8 +185,8 @@ function httpAPI(path = "", method = "GET", body = null) {
 };
 
 function statusName(status) {
-  return status == 2 ? "支持的"
-    : status == 1 ? "被封禁"
+  return status == 2 ? "未支持"
+    : status == 1 ? "已支持"
       : status == 0 ? "检测超时"
         : "检测异常";
 }
