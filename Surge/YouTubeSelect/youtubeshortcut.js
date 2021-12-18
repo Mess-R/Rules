@@ -126,9 +126,9 @@ const BASE_URL = 'https://www.youtube.com/premium'
 
     let info
     if (newStatus === 1) {
-      info = `已选定节点： ${rootName} | ${statusName(newStatus)} | ${reg}`
-    } else if (statusData[rootName] == 1) {
-      info = `节点异常 你可能无法使用会员权益`
+      info = `已选定节点： ${rootName} | ${statusName(newStatus)} | 已去广告`
+    } else if (statusData[rootName] == 2) {
+      info = `节点支持YouTube Premium`
     }
 
     $notification.post("YouTube检测", info, "")
