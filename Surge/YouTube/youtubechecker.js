@@ -1,5 +1,6 @@
-/* 脚本经本人测试已经可以正常运行，但仍可能存在bug，使用过程中遇到障碍请联系Telegram：https://t.me/okmytg
-脚本说明：https://github.com/fishingworld/something/tree/main/YouTubeSelect
+/* 
+脚本源地址：https://github.com/fishingworld/something/tree/main/YouTubeSelect
+修改了逻辑判断，检测切换不支持Premium的节点。达到去广告效果！
 */
 
 const BASE_URL = 'https://www.youtube.com/premium'
