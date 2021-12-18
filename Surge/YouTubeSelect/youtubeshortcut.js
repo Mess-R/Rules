@@ -131,7 +131,7 @@ const BASE_URL = 'https://www.youtube.com/premium'
       info = `节点异常 你可能无法使用会员权益`
     }
 
-    $notification.post("YouTube檢測", info, "")
+    $notification.post("YouTube检测", info, "")
 
 
     $done()
@@ -203,8 +203,8 @@ function httpAPI(path = "", method = "GET", body = null) {
 };
 
 function statusName(status) {
-  return status == 2 ? "支持的"
-    : status == 1 ? "被封禁"
+  return status == 2 ? "正常"
+    : status == 1 ? "送中"
       : status == 0 ? "检测超时"
         : "检测异常";
 }
