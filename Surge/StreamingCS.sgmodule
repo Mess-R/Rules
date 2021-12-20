@@ -1,12 +1,12 @@
-#!name= Streaming Check Switch
+#!name=Streaming Check Switch
 #!desc=YouTube Disney+ Netflix 检测切换
 
 [Script]
 #YouTube
-YouTubeChecker = type=cron,cronexp=10 0-23/4 * * *,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/Mess-R/Rules/main/Surge/YouTube/youtubechecker.js,script-update-interval=86400,control-api=1
+YouTubeChecker = type=cron,cronexp=59 */6 * * *,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/Mess-R/Rules/main/Surge/YouTube/youtubechecker.js,script-update-interval=86400,control-api=1
 #Disney+
-DisneyChecker = type=cron,cronexp=13 0-23/4 * * *,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/DisneySelect/disneychecker.js,script-update-interval=86400,control-api=1
-DisneyShortcut = type=cron,cronexp=5 0 31 1 2000,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/DisneySelect/disneyshortcut.js,script-update-interval=86400,control-api=1
+//DisneyChecker = type=cron,cronexp=13 0-23/4 * * *,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/DisneySelect/disneychecker.js,script-update-interval=86400,control-api=1
+DisneyShortcut = type=cron,cronexp=59 */6 * * *,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/DisneySelect/disneyshortcut.js,script-update-interval=86400,control-api=1
 #Netflix
-NetflixChecker = type=cron,cronexp=10 * * * *,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/NetflixSelect/netflixchecker.js,script-update-interval=86400,control-api=1
-NetflixShortcut = type=cron,cronexp=5 * 31 1 2000,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/NetflixSelect/netflixshortcut.js,script-update-interval=86400,control-api=1
+//NetflixChecker = type=cron,cronexp=10 * * * *,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/NetflixSelect/netflixchecker.js,script-update-interval=86400,control-api=1
+NetflixShortcut = type=cron,cronexp=59 */6 * * *,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/NetflixSelect/netflixshortcut.js,script-update-interval=86400,control-api=1
