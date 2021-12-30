@@ -77,13 +77,13 @@ function Check() {
         $configuration.sendMessage(mes1).then(resolve => {
             if (resolve.error) {
                 console.log(resolve.error);
-                content =pflag==0 && NoList[1]? `<p style="text-align: center; font-family: -apple-system; font-size: large; font-weight: thin"><br><b> 🎉 该节点<font color=#2FFF00>支持</font>去广告 </b><br><br>👇<br><br><font color=#54B6FF>-------------------------<br><b>⟦ `+$environment.params+` ⟧ </b><br>-------------------------</font>` : `<p style="text-align: center; font-family: -apple-system; font-size: large; font-weight: thin"><br><b>😭 该节点<font color=#FF0000>不支持</font>去广告 </b><br><br>👇<br><br><font color=#54B6FF>-------------------------<br><b>⟦ `+$environment.params+` ⟧ </b><br>-------------------------</font>`
+                content =pflag==0 && NoList[1]? `<p style="text-align: center; font-family: -apple-system; font-size: large; font-weight: thin"><br><b> 🎉 该节点支持去广告 </b><br><br>👇<br><br><font color=#54B6FF>-------------------------<br><b>⟦ `+$environment.params+` ⟧ </b><br>-------------------------</font>` : `<p style="text-align: center; font-family: -apple-system; font-size: large; font-weight: thin"><br><b>😭 该节点<font color=#FF0000>不支持</font>去广告 </b><br><br>👇<br><br><font color=#54B6FF>-------------------------<br><b>⟦ `+$environment.params+` ⟧ </b><br>-------------------------</font>`
                 content = pflag!=0 && !NoList[1]? `<p style="text-align: center; font-family: -apple-system; font-size: large; font-weight: thin">` + "<br>❌  <b>⟦ "+$environment.params+ " ⟧ </b>⚠️ <font color=#FF0000>切换失败</font><br><br><b>该策略组内未找到支持去广告</b>的节点" + "<br><br><font color=#54B6FF>-----------------------------<br><b>检测详情请查看JS脚本记录</b><br>-----------------------------</font>"+`</p>` : content
                 $done({"title":"YouTube 广告检测", "htmlMessage": content})
             }
             if (resolve.ret) {
                 console.log("已经切换至支持去广告的路线 ➟ "+NoList[1])
-                content = `<p style="text-align: center; font-family: -apple-system; font-size: large; font-weight: thin">` + "<br><b>⟦ "+$environment.params+ " ⟧ </b>已切换至支持<b><font color=#2FFF00>去广告</font></b>的路线<br><br> 👇<br><br> ⟦ "+NoList[1]+ " ⟧" + "<br><br><font color=#54B6FF>-----------------------------<br><b>检测详情请查看JS脚本记录</b><br>-----------------------------</font>"+`</p>`
+                content = `<p style="text-align: center; font-family: -apple-system; font-size: large; font-weight: thin">` + "<br><b>⟦ "+$environment.params+ " ⟧ </b>已切换至支持<b>去广告</b>的路线<br><br> 👇<br><br> ⟦ "+NoList[1]+ " ⟧" + "<br><br><font color=#54B6FF>-----------------------------<br><b>检测详情请查看JS脚本记录</b><br>-----------------------------</font>"+`</p>`
                 $done({"title":"YouTube 广告检测", "htmlMessage": content })
             }
     }, reject => {
